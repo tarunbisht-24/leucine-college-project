@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="admin-dashboard">
+    <h2>Admin Dashboard</h2>
+    <div id="manage-records">
+      <h3>Manage Student and Faculty Records</h3>
+      <form id="record-form">
+        <label for="record-type">Record Type:</label>
+        <select id="record-type" name="record-type" required>
+          <option value="STUDENT">Student</option>
+          <option value="FACULTYMEMBER">Faculty Member</option>
+        </select>
+        <label for="record-username">Username:</label>
+        <input type="text" id="record-username" name="record-username" required>
+        <label for="record-password">Password:</label>
+        <input type="password" id="record-password" name="record-password" required>
+        <label for="record-role">Role:</label>
+        <select id="record-role" name="record-role" required>
+          <option value="STUDENT">Student</option>
+          <option value="FACULTYMEMBER">Faculty Member</option>
+        </select>
+        <label for="record-name">Full Name:</label>
+        <input type="text" id="record-name" name="record-name" required>
+        <label for="record-email">Email:</label>
+        <input type="email" id="record-email" name="record-email" required>
+        <label for="record-phone">Phone:</label>
+        <input type="text" id="record-phone" name="record-phone" required>
+        <button type="submit">Add/Update Record</button>
+      </form>
+      <ul id="record-list"></ul>
+    </div>
+    <div id="dashboard-graphs">
+      <h3>Dashboard with Graphs</h3>
+      <!-- Charts will be inserted here -->
+      <canvas id="enrollment-trends-chart"></canvas>
+      <canvas id="course-load-chart"></canvas>
+    </div>
+    <button id="logout-button">Logout</button>
+  </div>
+  <script src="js/auth.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

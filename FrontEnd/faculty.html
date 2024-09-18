@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="faculty-dashboard">
+    <h2>Faculty Dashboard</h2>
+    <div id="class-list">
+      <h3>Manage Class List</h3>
+      <ul id="class-list-items"></ul>
+    </div>
+    <div id="update-profile">
+      <h3>Update Profile</h3>
+      <form id="update-profile-form">
+        <label for="office-hours">Office Hours:</label>
+        <input type="text" id="office-hours" name="office-hours" required>
+        <label for="contact-email">Contact Email:</label>
+        <input type="email" id="contact-email" name="contact-email" required>
+        <label for="contact-phone">Contact Phone:</label>
+        <input type="text" id="contact-phone" name="contact-phone" required>
+        <button type="submit">Update Profile</button>
+      </form>
+    </div>
+    <button id="logout-button">Logout</button>
+  </div>
+  <script src="js/auth.js"></script>
+  <script src="js/faculty.js"></script>
+</body>
+</html>
